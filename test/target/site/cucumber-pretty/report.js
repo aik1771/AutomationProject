@@ -32,42 +32,57 @@ formatter.match({
   "location": "HerokuSD.iClickOnSubmitButton()"
 });
 formatter.result({
-  "duration": 13352023348,
+  "duration": 3662814996,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 7,
-  "name": "Verify valid login",
+  "line": 13,
+  "name": "Verified dropdown text",
   "description": "",
-  "id": "heroku-search-feature;verify-valid-login",
+  "id": "heroku-search-feature;verified-dropdown-text",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 12,
+      "name": "@dropdown_text"
+    }
+  ]
 });
 formatter.step({
-  "line": 8,
-  "name": "I enter username as “n12345@test.com” and password as “123456”",
+  "line": 14,
+  "name": "I search on top search bar with text \"ios\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "I click on submit button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "I verify logout button is displayed",
+  "line": 15,
+  "name": "I verify \"Title: I will teach you iOS\" as displayed result",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "arguments": [
+    {
+      "val": "ios",
+      "offset": 38
+    }
+  ],
+  "location": "HerokuSD.iSearchOnTopSearchBarWithText(String)"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 13220403714,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Title: I will teach you iOS",
+      "offset": 10
+    }
+  ],
+  "location": "HerokuSD.iVerifyAsDisplayedResult(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 3066130858,
+  "status": "passed"
 });
 });

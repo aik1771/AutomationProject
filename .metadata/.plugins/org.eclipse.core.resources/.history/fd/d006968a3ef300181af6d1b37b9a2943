@@ -32,20 +32,6 @@ public class HerokuSD extends start.driver.DriverWrapper {
 	    // Write code here that turns the phrase above into concrete actions
 	    locator.clickOnEmail();
 	}
-	
-	@When("^I search on top search bar with text \"([^\"]*)\"$")
-	public void iSearchOnTopSearchBarWithText(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    locator.clickOnSearch();
-	    locator.setSearch("iOS");
-	}
-
-	@Then("^I verify \"([^\"]*)\" as displayed result$")
-	public void iVerifyAsDisplayedResult(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    locator.checkDropDownText();
-	}
-
 
 	@Then("^I verify logout button is displayed$")
 	public void i_verify_logout_button_is_displayed() throws Throwable {

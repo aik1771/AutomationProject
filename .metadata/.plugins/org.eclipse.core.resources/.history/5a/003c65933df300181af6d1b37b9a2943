@@ -12,6 +12,7 @@ public class PageFunctions {
 	
 	public static void clickOn(By locator) throws InterruptedException {
 		Thread.sleep(2000);
+		
         DriverWrapper.getDriver().findElement(locator).click();
         Thread.sleep(3000);
          
