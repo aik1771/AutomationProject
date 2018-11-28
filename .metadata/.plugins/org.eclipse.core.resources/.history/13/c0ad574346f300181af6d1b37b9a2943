@@ -41,7 +41,7 @@ public class PageElements extends PageFunctions{
 	 public static void checkDropDownText() throws InterruptedException
 	 {
 		 Thread.sleep(1000);
-		 assertText(dropDownText,"Title: I will teach you IOS");
+		 assertText(dropDownText,"Title: I will teach you iOS");
 	 }
 	
 	public static void clickOnPassword()throws InterruptedException

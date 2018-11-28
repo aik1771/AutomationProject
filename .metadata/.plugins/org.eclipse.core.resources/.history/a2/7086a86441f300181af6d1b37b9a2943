@@ -11,8 +11,7 @@ public class PageElements extends PageFunctions{
 	private static By logOutButton = By.xpath("//a[contains(@href,'logout')]");
 	private static By moveOverElement = By.xpath("//img[@class='img-circle']");
 	private static By searchField = By.xpath("//input[@id='aa-search-input']");
-	private static By dropDownText = By.cssSelector("a > span");
-		
+	private static By dropDownText = By.xpath("//span[@id='algolia-autocomplete-listbox-0']//div[@role='option']/a[@href='/service_detail/5917c1291858e92de34b2842']/spa");
 	
 
 	
@@ -41,7 +40,7 @@ public class PageElements extends PageFunctions{
 	 public static void checkDropDownText() throws InterruptedException
 	 {
 		 Thread.sleep(1000);
-		 assertText(dropDownText,"Title: I will teach you IOS");
+		 assertText(dropDownText,"Title: I will teach you iOS");
 	 }
 	
 	public static void clickOnPassword()throws InterruptedException

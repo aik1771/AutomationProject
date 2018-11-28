@@ -37,13 +37,13 @@ public class HerokuSD extends start.driver.DriverWrapper {
 	public void iSearchOnTopSearchBarWithText(String arg1) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    locator.clickOnSearch();
-	    locator.setSearch("iOS");
+	    locator.setSearch(text);
 	}
 
 	@Then("^I verify \"([^\"]*)\" as displayed result$")
 	public void iVerifyAsDisplayedResult(String arg1) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-	    locator.checkDropDownText();
+	    throw new PendingException();
 	}
 
 

@@ -11,8 +11,6 @@ public class PageElements extends PageFunctions{
 	private static By logOutButton = By.xpath("//a[contains(@href,'logout')]");
 	private static By moveOverElement = By.xpath("//img[@class='img-circle']");
 	private static By searchField = By.xpath("//input[@id='aa-search-input']");
-	private static By dropDownText = By.cssSelector("a > span");
-		
 	
 
 	
@@ -36,12 +34,6 @@ public class PageElements extends PageFunctions{
 	 {
 		 Thread.sleep(1000);
 		 assertText(logOutButton,"Logout");
-	 }
-	 
-	 public static void checkDropDownText() throws InterruptedException
-	 {
-		 Thread.sleep(1000);
-		 assertText(dropDownText,"Title: I will teach you IOS");
 	 }
 	
 	public static void clickOnPassword()throws InterruptedException
