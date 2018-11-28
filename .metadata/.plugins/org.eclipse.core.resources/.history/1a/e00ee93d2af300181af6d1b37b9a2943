@@ -1,0 +1,14 @@
+package data.function;
+
+import org.testng.Assert;
+
+public class CheckAssertion {
+	
+	public String AssertCheck(String result, String actual)
+	{
+		Assert.assertEquals(result, actual);
+		
+		return result;
+	}
+
+}

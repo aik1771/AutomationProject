@@ -1,0 +1,12 @@
+package com.herokuapp;
+
+import org.openqa.selenium.By;
+
+public class PageElements {
+	
+	private static By emailField = By.xpath("//input[@id='email']");
+	private static By passwordField = By.xpath("//input[@id='password']");
+	private static By loginButton = By.xpath("//button[@type='submit']");
+	
+
+}

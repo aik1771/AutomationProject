@@ -1,0 +1,15 @@
+package steps;
+
+import cucumber.api.java.en.Given;
+
+public class HerokuSD  {
+	
+	DriverWRapper runner = new DriverWrapper();
+	
+	@Given("^I click on submit button$")
+	public void iClickOnSubmitButton() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		initializeWebDriver("https://floating-anchorage-58495.herokuapp.com/");
+	}
+
+}

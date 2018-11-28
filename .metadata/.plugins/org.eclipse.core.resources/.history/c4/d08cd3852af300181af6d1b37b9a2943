@@ -1,0 +1,15 @@
+package data.function;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+
+public class CheckAssertion {
+	
+	public By AssertCheck(By logOutButton, String actual)
+	{
+		Assert.assertEquals(logOutButton, actual);
+		
+		return logOutButton;
+	}
+
+}
