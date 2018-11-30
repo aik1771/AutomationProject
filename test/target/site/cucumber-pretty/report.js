@@ -32,42 +32,87 @@ formatter.match({
   "location": "HerokuSD.iClickOnSubmitButton()"
 });
 formatter.result({
-  "duration": 13352023348,
+  "duration": 3137380687,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 7,
-  "name": "Verify valid login",
+  "line": 27,
+  "name": "Total Number of Poasts",
   "description": "",
-  "id": "heroku-search-feature;verify-valid-login",
+  "id": "heroku-search-feature;total-number-of-poasts",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 26,
+      "name": "@getPageData"
+    }
+  ]
 });
 formatter.step({
-  "line": 8,
-  "name": "I enter username as “n12345@test.com” and password as “123456”",
-  "keyword": "When "
+  "line": 28,
+  "name": "I am on home page of heroku",
+  "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
-  "name": "I click on submit button",
+  "line": 29,
+  "name": "I verify 56 total post is displayed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 30,
+  "name": "I verify all post has price tag",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
-  "name": "I verify logout button is displayed",
-  "keyword": "Then "
+  "line": 31,
+  "name": "I verify all post has title",
+  "keyword": "And "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.step({
+  "line": 32,
+  "name": "I verify all post has displayed image",
+  "keyword": "And "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "HerokuSD.i_am_on_home_page_of_heroku()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 4468227314,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "56",
+      "offset": 9
+    }
+  ],
+  "location": "HerokuSD.i_verify_total_post_is_displayed(int)"
+});
+formatter.result({
+  "duration": 63570156,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HerokuSD.i_verify_all_post_has_price_tag()"
+});
+formatter.result({
+  "duration": 1812268378,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HerokuSD.i_verify_all_post_has_title()"
+});
+formatter.result({
+  "duration": 1483867099,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HerokuSD.i_verify_all_post_has_displayed_image()"
+});
+formatter.result({
+  "duration": 660241135,
+  "status": "passed"
 });
 });
