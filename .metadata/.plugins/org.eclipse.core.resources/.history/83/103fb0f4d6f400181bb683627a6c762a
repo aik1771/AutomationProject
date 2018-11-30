@@ -1,0 +1,9 @@
+package com.darksky;
+
+import org.openqa.selenium.By;
+
+public class PageElements {
+	
+	private static By timeMachine = By.xpath("//a[@class='button']");
+
+}

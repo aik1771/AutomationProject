@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("heroku.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("darksky.feature");
 formatter.feature({
   "line": 2,
   "name": "Heroku Search Feature",
@@ -8,7 +8,7 @@ formatter.feature({
   "tags": [
     {
       "line": 1,
-      "name": "@heroku"
+      "name": "@darsky"
     },
     {
       "line": 1,
@@ -25,94 +25,46 @@ formatter.background({
 });
 formatter.step({
   "line": 5,
-  "name": "User is on the Threely login page",
+  "name": "User is on the DarkSky page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "HerokuSD.iClickOnSubmitButton()"
+  "location": "DarkSkySD.userIsOnTheDarkSkyPage()"
 });
 formatter.result({
-  "duration": 3137380687,
+  "duration": 4782311317,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 27,
-  "name": "Total Number of Poasts",
+  "line": 9,
+  "name": "Verify Time Machine Calendar",
   "description": "",
-  "id": "heroku-search-feature;total-number-of-poasts",
+  "id": "heroku-search-feature;verify-time-machine-calendar",
   "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 26,
-      "name": "@getPageData"
-    }
-  ]
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 28,
-  "name": "I am on home page of heroku",
-  "keyword": "Given "
+  "line": 10,
+  "name": "I click on Time Machine",
+  "keyword": "When "
 });
 formatter.step({
-  "line": 29,
-  "name": "I verify 56 total post is displayed",
+  "line": 11,
+  "name": "I verify date is selected to todays date",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 30,
-  "name": "I verify all post has price tag",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I verify all post has title",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 32,
-  "name": "I verify all post has displayed image",
-  "keyword": "And "
-});
 formatter.match({
-  "location": "HerokuSD.i_am_on_home_page_of_heroku()"
+  "location": "DarkSkySD.iClickOnTimeMachine()"
 });
 formatter.result({
-  "duration": 4468227314,
+  "duration": 5111417710,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "56",
-      "offset": 9
-    }
-  ],
-  "location": "HerokuSD.i_verify_total_post_is_displayed(int)"
+  "location": "DarkSkySD.iVerifyDateIsSelectedToTodaysDate()"
 });
 formatter.result({
-  "duration": 63570156,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HerokuSD.i_verify_all_post_has_price_tag()"
-});
-formatter.result({
-  "duration": 1812268378,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HerokuSD.i_verify_all_post_has_title()"
-});
-formatter.result({
-  "duration": 1483867099,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HerokuSD.i_verify_all_post_has_displayed_image()"
-});
-formatter.result({
-  "duration": 660241135,
+  "duration": 88927687,
   "status": "passed"
 });
 });
