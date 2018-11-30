@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="test" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="steps.TestRunner" time="8.799">
+    <testsuite name="Feature: Heroku Search Feature" time="8.799">
+      <testsuite name="Scenario: Total Number of Poasts" time="8.799">
+        <testcase name="Given User is on the Threely login page" classname="Scenario: Total Number of Poasts" time="5.17"/>
+        <testcase name="Given I am on home page of heroku" classname="Scenario: Total Number of Poasts" time="0.042"/>
+        <testcase name="Then I verify 56 total post is displayed" classname="Scenario: Total Number of Poasts" time="1.444"/>
+        <testcase name="And I verify all post has price tag" classname="Scenario: Total Number of Poasts" time="1.452"/>
+        <testcase name="And I verify all post has title" classname="Scenario: Total Number of Poasts" time="0.684"/>
+        <testcase name="And I verify all post has displayed image" classname="Scenario: Total Number of Poasts" time="0.007"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>
