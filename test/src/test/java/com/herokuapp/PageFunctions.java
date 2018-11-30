@@ -33,7 +33,6 @@ public class PageFunctions {
         
         
     }
-	
 	public static void setValue(By locator, String text) throws InterruptedException {
         DriverWrapper.getDriver().findElement(locator).sendKeys(text);
         Thread.sleep(2000);
