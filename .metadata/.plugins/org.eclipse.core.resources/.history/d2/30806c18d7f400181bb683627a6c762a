@@ -1,0 +1,15 @@
+package com.darksky;
+
+import org.openqa.selenium.By;
+
+public class DarkSkyElements extends BasePage {
+	
+	private static By timeMachine = By.xpath("//a[@class='button']");
+	
+	
+	public static void clickOnTimeMachine()
+	{
+		clickOn(timeMachine);
+	}
+
+}

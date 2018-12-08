@@ -1,0 +1,21 @@
+package com.darksky;
+
+import org.openqa.selenium.By;
+
+import start.driver.DriverWrapper;
+
+public class BasePage {
+	
+	public static void clickOn(By locator) throws InterruptedException {
+		Thread.sleep(2000);
+        DriverWrapper.getDriver().findElement(locator).click();
+        Thread.sleep(3000);
+         
+    }
+	
+	public static void getCalendarDate(By locator)
+	{
+		DriverWrapper.getDriver().findElement(locator).getText();
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.darksky;
+
+import org.openqa.selenium.By;
+
+public class DarkSkyElements extends BasePage {
+	
+	private static By timeMachine = By.xpath("//a[@class='button']");
+	private static By calendarDate = By.xpath("//td[@class='is-today']");
+	
+	public static void clickOnTimeMachine() throws InterruptedException
+	{
+		clickOn(timeMachine);
+	}
+	
+	
+	public static void getText()
+	{
+		getCalendarDate(calendarDate);
+	}
+	
+	
+	
+
+}
